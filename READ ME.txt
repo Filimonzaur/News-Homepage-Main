@@ -1,0 +1,6 @@
+### ABOUT PROJECT ###
+
+In this project I coded a News Homepage with a interactive hamburger menu for mobile.
+I reproduced a given design and made it responsive.
+
+Made with: HTML, SASS, JAVASCRIPT.

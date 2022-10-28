@@ -1,0 +1,208 @@
+/* ### Primary */
+/* ### Neutral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 1em 1em;
+}
+.closed{
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+  position: relative;
+}
+nav img {
+  width: 10%;
+  max-width: 2.5em;
+  cursor: pointer;
+}
+nav .menu {
+  position: absolute;
+  background-color: hsl(36deg, 100%, 99%);
+  height: 100vh;
+  width: 70%;
+  right: 0;
+  top: 1em;
+  right: -1em;
+}
+nav .menu img {
+  float: right;
+  margin-right: 2em;
+}
+nav .menu ul {
+  list-style: none;
+  padding-top: 5em;
+}
+nav .menu ul li {
+  padding: 1em 0 1em 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: hsl(240deg, 100%, 5%);
+  display: block;
+}
+nav .menu ul li:hover {
+  background-color: hsl(233deg, 8%, 79%);
+}
+
+.grid-section .desktop-img {
+  display: none;
+}
+.grid-section img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.grid-section h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: hsl(240deg, 100%, 5%);
+}
+.grid-section .about p {
+  margin-top: 1em;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 400;
+}
+.grid-section .about .btn {
+  width: 50%;
+  padding: 0.8em 0.4em;
+  background-color: hsl(5deg, 85%, 63%);
+  text-align: center;
+  color: hsl(36deg, 100%, 99%);
+  margin: 1em 0 2em;
+  cursor: pointer;
+}
+.grid-section .new {
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 1em 0.5em;
+  margin: 3em 0;
+}
+.grid-section .new h2 {
+  color: hsl(35deg, 77%, 62%);
+}
+.grid-section .new h3 {
+  color: hsl(36deg, 100%, 99%);
+  margin: 0.5em 0;
+}
+.grid-section .new p {
+  color: hsl(233deg, 8%, 79%);
+}
+.grid-section .new hr {
+  height: 1px;
+  background-color: hsl(233deg, 8%, 79%);
+  border: none;
+  margin-top: 1.2em;
+}
+
+.cards {
+  margin: 1em 0;
+}
+.cards section {
+  display: flex;
+}
+.cards section img {
+  width: 80%;
+}
+.cards section h2 {
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.cards section h3 {
+  color: hsl(240deg, 100%, 5%);
+}
+.cards section p {
+  color: hsl(236deg, 13%, 42%);
+  margin-top: 0.5em;
+}
+
+@media (min-width: 801px) {
+  .grid-section {
+    max-height: 40em;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img img new" "title about new";
+  }
+  .grid-section .desktop-img {
+    display: inline;
+    width: 100%;
+  }
+  .grid-section .image {
+    grid-area: img;
+  }
+  .grid-section .title {
+    grid-area: title;
+  }
+  .grid-section .about {
+    grid-area: about;
+  }
+  .grid-section .about .btn {
+    margin-bottom: 0;
+  }
+  .grid-section .new {
+    grid-area: new;
+    margin: 0 0 0 1em;
+  }
+  .grid-section .new h2 {
+    font-size: 2.5rem;
+  }
+  .grid-section .new h3 {
+    font-size: 1.5rem;
+  }
+  .grid-section .new p {
+    font-size: 1em;
+  }
+  .grid-section .mobile-img {
+    display: none;
+  }
+  .cards {
+    max-height: 100em;
+    margin: 5em 0;
+    display: flex;
+  }
+  nav #menu {
+    display: none;
+  }
+  
+  nav .menu {
+    position: relative;
+    height: unset;
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  nav .menu img {
+    display: none;
+  }
+  nav .menu ul {
+    float: right;
+    display: flex;
+    padding-top: 0;
+  }
+  nav .menu ul li {
+    cursor: pointer;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0;
+    margin-left: 2em;
+  }
+  nav .menu ul li:hover {
+    background-color: transparent;
+    font-weight: 900;
+    color: hsl(240deg, 100%, 5%);
+  }
+}/*# sourceMappingURL=main.css.map */
